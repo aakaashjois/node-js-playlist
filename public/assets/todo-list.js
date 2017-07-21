@@ -20,6 +20,7 @@ $(document).ready(function(){
   });
 
   $('li').on('click', function(){
+      console.log('OnClick');
       var item = $(this).text().replace(/ /g, "-");
       $.ajax({
         type: 'DELETE',
